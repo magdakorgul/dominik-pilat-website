@@ -1,0 +1,32 @@
+body {
+  background-color: #6193c5;
+  text-transform: uppercase;
+  color: white;
+  margin: 10px auto;
+  padding: 15px;
+}
+@font-face {
+  font-family: haskoy;
+  src: url(https:github.com/ertekinno/haskoy/tree/main/fonts/ttf);
+}
+@font-face {
+  font-family: haskoy;
+  src: url(https:github.com/ertekinno/haskoy/tree/main/fonts/otf);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+p {
+  text-align: center;
+  font-family: haskoy;
+  font-size: 27;
+  font-weight: 400;
+}
+h2 {
+  text-align: center;
+  font-family: haskoy;
+  font-size: 50;
+  font-weight: 700;
+}
