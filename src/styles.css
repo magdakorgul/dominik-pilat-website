@@ -1,9 +1,10 @@
 body {
   background-color: #6193c5;
   text-transform: uppercase;
-  color: white;
-  margin: 10px auto;
-  padding: 15px;
+  margin: 0 auto;
+  padding: 0;
+  color: #e6e6e6;
+  font-family: "Manrope", sans-serif;
 }
 @font-face {
   font-family: haskoy;
@@ -20,13 +21,116 @@ body {
 }
 p {
   text-align: center;
-  font-family: haskoy;
-  font-size: 27;
-  font-weight: 400;
+  font-size: 27px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 h2 {
   text-align: center;
-  font-family: haskoy;
-  font-size: 50;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+
+.top {
+  display: block;
+  max-width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.bottom {
+  display: block;
+  max-width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.navigation-links {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+a {
+  margin-left: 15px;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 30px;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: #f4c650;
+}
+a.mail:hover {
+  color: #f4c650;
+}
+a:active {
+  color: black;
+}
+a:link {
+  color: white;
+}
+@media (max-width: 480px) {
+  .top {
+    display: block;
+    max-width: 100%;
+    max-width: 310px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+
+  .bottom {
+    display: block;
+    max-width: 100%;
+    max-width: 310px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 0 auto;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font: 30px;
+  }
+  a {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 899px) {
+  .top {
+    max-width: 250px;
+  }
+  .bottom {
+    max-width: 250px;
+  }
+  p {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  a {
+    font-size: 14px;
+  }
 }
