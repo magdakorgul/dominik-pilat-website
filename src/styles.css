@@ -1,75 +1,91 @@
 body {
   background-color: #6193c5;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   color: #e6e6e6;
   font-family: "Manrope", sans-serif;
-}
-@font-face {
-  font-family: haskoy;
-  src: url(https:github.com/ertekinno/haskoy/tree/main/fonts/ttf);
-}
-@font-face {
-  font-family: haskoy;
-  src: url(https:github.com/ertekinno/haskoy/tree/main/fonts/otf);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-p {
-  text-align: center;
-  font-size: 27px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-h2 {
-  text-align: center;
-  font-size: 50px;
-  font-weight: 800;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  line-height: 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  height: 100%;
+  flex-grow: 1;
+
 }
 
-.top {
-  display: block;
-  max-width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+.section-top {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
 }
-.bottom {
-  display: block;
-  max-width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 0;
-}
-.navigation-links {
-  text-decoration: none;
-  color: white;
+
+.section-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
   text-align: center;
 }
-a {
-  margin-left: 15px;
-  margin-right: 15px;
+
+.sticky-picture {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 27px;
+  font-weight: 700;
+}
+h2 {
+  margin: 10px 0;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.top, .bottom {
+  max-width: 100%;
+  height: auto;
+}
+.top{
+  margin-bottom: 20px;
+}
+.bottom{
+  margin-top: 20px
+}
+
+.navigation-links {
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 10px;
-  line-height: 30px;
+  
+  text-align: center;
+  
+}
+a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  
+  text-decoration: none;
+  font-weight: 700;
+ 
 }
 a:visited {
-  color: white;
+  color: #f4c650;
 }
+/* nie dziala!!!!!! */
 a:hover {
   color: #f4c650;
 }
@@ -80,57 +96,135 @@ a:active {
   color: black;
 }
 a:link {
-  color: white;
+  color: #e6e6e6;
 }
 @media (max-width: 480px) {
-  .top {
-    display: block;
-    max-width: 100%;
-    max-width: 310px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-  }
 
-  .bottom {
-    display: block;
-    max-width: 100%;
-    max-width: 310px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    margin-bottom: 0 auto;
+p {
+    font-size: 22px;
+    margin-bottom: 10px;
   }
-
-  p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
+  
   h2 {
-    font: 30px;
+    font-size: 45px;
   }
+  
   a {
-    font-size: 12px;
-    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
-@media (min-width: 481px) and (max-width: 899px) {
-  .top {
+@media (min-width: 481px) and (max-width: 767px) {
+  .top, .bottom {
     max-width: 250px;
   }
-  .bottom {
-    max-width: 250px;
-  }
+  
   p {
     font-size: 22px;
   }
+  
   h2 {
     font-size: 40px;
-    line-height: 30px;
+    /* line-height: 1.2; */
   }
+  
   a {
     font-size: 14px;
+    
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.top, .bottom {
+  max-width: 300px;
+}
+p {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 45px;
+  /* line-height: 1.2; */
+}
+
+a {
+  font-size: 15px;
+  
+}
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .top, .bottom {
+    max-width: 350px;
+  }
+  
+  p {
+    font-size: 26px;
+  }
+  
+  h2 {
+    font-size: 48px;
+   
+  }
+  
+  a {
+    font-size: 16px;
+    
+  }
+}
+
+
+@media (min-width: 1201px) and (max-width: 1366px) {
+  .top, .bottom {
+    max-width: 400px;
+  }
+  
+  p {
+    font-size: 27px;
+  }
+  
+  h2 {
+    font-size: 50px;
+    
+  }
+  
+  a {
+    font-size: 16px;
+  }
+  /* ta wydaje sie ok, do sprawwdzenia popularne rozdzielczosci */
+}
+
+@media (min-width: 1367px) {
+  .top, .bottom {
+    max-width: 450px;
+  }
+  
+  p {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 55px;
+    
+  }
+  
+  a {
+    font-size: 18px;
+  }
+}
+  /* do dostosowania do duzej */
+
+/* rozdzielczości: 
+mobile do 480 - jest,
+mobile do 768,
+mobile/tablet do 768
+tablet do 1024
+desktop do 1200
+desktop do 1366
+desktop do 1920 
+
+zrobic mobile ponizej mniej wiecej 750px
+tablet osobno: 768 x 1024 
+*/
